@@ -9,19 +9,31 @@
   </head>
 
   <body>
+      <nav>
+          <ul>
+           <li>Introduction</li>
+           <li>Basics & Browser Support</li>
+           <li>Important Termonology</li>
+           <li>Grid Properties Table of Contents</li>
+          </ul>
+        </nav>
     <main id="main-doc">
-      <section class="main-section" id="CSS_Grid">
-        <header>CSS Grid</header>
+      <section class="main-section">
+        <header>A Complete Guide to CSS Grid</header id="A_Complete_Guide_to_CSS_Grid">
         <p class="text">
           CSS Grid Layout is the most powerful layout system available in CSS.
           It is a 2-dimensional system, meaning it can handle both columns and
-          rows, unlike flexbox which is largely a 1-dimensional system. You work
-          with Grid Layout by applying CSS rules both to a parent element (which
-          becomes the Grid Container) and to that element's children (which
-          become Grid Items).
+          rows, unlike
+          <a
+            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            target="_blank"
+            >flexbox</a
+          >
+          which is largely a 1-dimensional system. You work with Grid Layout by
+          applying CSS rules both to a parent element (which becomes the Grid
+          Container) and to that element's children (which become Grid Items).
         </p>
       </section>
-
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
         <p class="text">
@@ -38,17 +50,26 @@
           solve the layout problems we've all been hacking our way around for as
           long as we've been making websites. There are two primary things that
           inspired me to create this guide. The first is Rachel Andrew's awesome
-          book Get Ready for CSS Grid Layout. It's a thorough, clear
-          introduction to Grid and is the basis of this entire article. I highly
-          encourage you to buy it and read it. My other big inspiration is Chris
-          Coyier's A Complete Guide to Flexbox, which has been my go-to resource
-          for everything flexbox. It's helped a ton of people, evident by the
-          fact that it's the top result when you Google "flexbox." You'll notice
-          many similarities between his post and mine, because why not steal
-          from the best? My intention with this guide is to present the Grid
-          concepts as they exist in the very latest version of the
-          specification. So I won't be covering the out of date IE syntax, and
-          I'll do my best to update this guide regularly as the spec matures.
+          book
+          <a
+            href="https://abookapart.com/products/get-ready-for-css-grid-layout"
+            target="_blank"
+            >Get Ready for CSS Grid Layout</a
+          >. It's a thorough, clear introduction to Grid and is the basis of
+          this entire article. I highly encourage you to buy it and read it. My
+          other big inspiration is Chris Coyier's
+          <a
+            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            target="_blank"
+            >A Complete Guide to Flexbox</a
+          >, which has been my go-to resource for everything flexbox. It's
+          helped a ton of people, evident by the fact that it's the top result
+          when you Google "flexbox." You'll notice many similarities between his
+          post and mine, because why not steal from the best? My intention with
+          this guide is to present the Grid concepts as they exist in the very
+          latest version of the specification. So I won't be covering the out of
+          date IE syntax, and I'll do my best to update this guide regularly as
+          the spec matures.
         </p>
       </section>
 
@@ -75,11 +96,25 @@
 
       <section class="main-section" id="Important_Terminology">
         <header>Important Terminology</header>
-        <p class="text"></p>
+        <p class="text">
+          Before diving into the concepts of Grid it's important to understand
+          the terminology. Since the terms involved here are all kinda
+          conceptually similar, it's easy to confuse them with one another if
+          you don't first memorize their meanings defined by the Grid
+          specification. But don't worry, there aren't many of them.Grid
+          Container The element on which display: grid is applied. It's the
+          direct parent of all the grid items. In this example container is the
+          grid container.
+        </p>
       </section>
 
       <section class="main-section" id="Grid_Properties_Table_of_Contents">
         <header>Grid Properties Table of Contents</header>
+        <p class="text"></p>
+      </section>
+
+      <section class="main-section" id="Properties_for_the_Parent">
+        <header>Properties for the Parent</header>
         <p class="text"></p>
       </section>
     </main>
