@@ -1,124 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="techDoc.css" />
-    <title>Technical Documention</title>
-  </head>
 
-  <body>
-      <nav>
-          <ul>
-           <li>Introduction</li>
-           <li>Basics & Browser Support</li>
-           <li>Important Termonology</li>
-           <li>Grid Properties Table of Contents</li>
-          </ul>
-        </nav>
-    <main id="main-doc">
-      <section class="main-section">
-        <header>A Complete Guide to CSS Grid</header id="A_Complete_Guide_to_CSS_Grid">
-        <p class="text">
-          CSS Grid Layout is the most powerful layout system available in CSS.
-          It is a 2-dimensional system, meaning it can handle both columns and
-          rows, unlike
-          <a
-            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-            target="_blank"
-            >flexbox</a
-          >
-          which is largely a 1-dimensional system. You work with Grid Layout by
-          applying CSS rules both to a parent element (which becomes the Grid
-          Container) and to that element's children (which become Grid Items).
-        </p>
-      </section>
-      <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-        <p class="text">
-          CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout
-          system that aims to do nothing less than completely change the way we
-          design grid-based user interfaces. CSS has always been used to lay out
-          our web pages, but it's never done a very good job of it. First, we
-          used tables, then floats, positioning and inline-block, but all of
-          these methods were essentially hacks and left out a lot of important
-          functionality (vertical centering, for instance). Flexbox helped out,
-          but it's intended for simpler one-dimensional layouts, not complex
-          two-dimensional ones (Flexbox and Grid actually work very well
-          together). Grid is the very first CSS module created specifically to
-          solve the layout problems we've all been hacking our way around for as
-          long as we've been making websites. There are two primary things that
-          inspired me to create this guide. The first is Rachel Andrew's awesome
-          book
-          <a
-            href="https://abookapart.com/products/get-ready-for-css-grid-layout"
-            target="_blank"
-            >Get Ready for CSS Grid Layout</a
-          >. It's a thorough, clear introduction to Grid and is the basis of
-          this entire article. I highly encourage you to buy it and read it. My
-          other big inspiration is Chris Coyier's
-          <a
-            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-            target="_blank"
-            >A Complete Guide to Flexbox</a
-          >, which has been my go-to resource for everything flexbox. It's
-          helped a ton of people, evident by the fact that it's the top result
-          when you Google "flexbox." You'll notice many similarities between his
-          post and mine, because why not steal from the best? My intention with
-          this guide is to present the Grid concepts as they exist in the very
-          latest version of the specification. So I won't be covering the out of
-          date IE syntax, and I'll do my best to update this guide regularly as
-          the spec matures.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="techDoc.css" />
+  <title>Technical Documention</title>
+</head>
 
-      <section class="main-section" id="Basics_&_Browser_Support">
-        <header>Basics & Browser Support</header>
-        <p class="text">
-          To get started you have to define a container element as a grid with
-          display: grid, set the column and row sizes with grid-template-columns
-          and grid-template-rows, and then place its child elements into the
-          grid with grid-column and grid-row. Similarly to flexbox, the source
-          order of the grid items doesn't matter. Your CSS can place them in any
-          order, which makes it super easy to rearrange your grid with media
-          queries. Imagine defining the layout of your entire page, and then
-          completely rearranging it to accommodate a different screen width all
-          with only a couple lines of CSS. Grid is one of the most powerful CSS
-          modules ever introduced. As of March 2017, most browsers shipped
-          native, unprefixed support for CSS Grid: Chrome (including on
-          Android), Firefox, Safari (including on iOS), and Opera. Internet
-          Explorer 10 and 11 on the other hand support it, but it's an old
-          implementation with an outdated syntax. The time to build with grid is
-          now!
-        </p>
-      </section>
+<body>
+  <nav>
+    <ul>
+      <li>Introduction</li>
+      <li>Basics & Browser Support</li>
+      <li>Important Termonology</li>
+      <li>Grid Properties Table of Contents</li>
+    </ul>
+  </nav>
 
-      <section class="main-section" id="Important_Terminology">
-        <header>Important Terminology</header>
-        <p class="text">
-          Before diving into the concepts of Grid it's important to understand
-          the terminology. Since the terms involved here are all kinda
-          conceptually similar, it's easy to confuse them with one another if
-          you don't first memorize their meanings defined by the Grid
-          specification. But don't worry, there aren't many of them.Grid
-          Container The element on which display: grid is applied. It's the
-          direct parent of all the grid items. In this example container is the
-          grid container.
-        </p>
-      </section>
+  <main id="main-doc">
+    <section class="main-section" id="A_Complete_Guide_to_CSS_Grid">
+      <header>A Complete Guide to CSS Grid</header>
+      <p class="text">
+        CSS Grid Layout is the most powerful layout system available in CSS.
+        It is a 2-dimensional system, meaning it can handle both columns and
+        rows, unlike
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">flexbox</a>
+        which is largely a 1-dimensional system. You work with Grid Layout by
+        applying CSS rules both to a parent element (which becomes the Grid
+        Container) and to that element's children (which become Grid Items).
+      </p>
+    </section>
 
-      <section class="main-section" id="Grid_Properties_Table_of_Contents">
-        <header>Grid Properties Table of Contents</header>
-        <p class="text"></p>
-      </section>
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p class="text">
+        CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout
+        system that aims to do nothing less than completely change the way we
+        design grid-based user interfaces. CSS has always been used to lay out
+        our web pages, but it's never done a very good job of it. First, we
+        used tables, then floats, positioning and inline-block, but all of
+        these methods were essentially hacks and left out a lot of important
+        functionality (vertical centering, for instance). Flexbox helped out,
+        but it's intended for simpler one-dimensional layouts, not complex
+        two-dimensional ones (Flexbox and Grid actually work very well
+        together). Grid is the very first CSS module created specifically to
+        solve the layout problems we've all been hacking our way around for as
+        long as we've been making websites. There are two primary things that
+        inspired me to create this guide. The first is Rachel Andrew's awesome
+        book
+        <a href="https://abookapart.com/products/get-ready-for-css-grid-layout" target="_blank">Get Ready for CSS Grid
+          Layout</a>. It's a thorough, clear introduction to Grid and is the basis of
+        this entire article. I highly encourage you to buy it and read it. My
+        other big inspiration is Chris Coyier's
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to
+          Flexbox</a>, which has been my go-to resource for everything flexbox. It's
+        helped a ton of people, evident by the fact that it's the top result
+        when you Google "flexbox." You'll notice many similarities between his
+        post and mine, because why not steal from the best? My intention with
+        this guide is to present the Grid concepts as they exist in the very
+        latest version of the specification. So I won't be covering the out of
+        date IE syntax, and I'll do my best to update this guide regularly as
+        the spec matures.
+      </p>
+    </section>
 
-      <section class="main-section" id="Properties_for_the_Parent">
-        <header>Properties for the Parent</header>
-        <p class="text"></p>
-      </section>
-    </main>
+    <section class="main-section" id="Basics_&_Browser_Support">
+      <header>Basics & Browser Support</header>
+      <p class="text">
+        To get started you have to define a container element as a grid with
+        display: grid, set the column and row sizes with grid-template-columns
+        and grid-template-rows, and then place its child elements into the
+        grid with grid-column and grid-row. Similarly to flexbox, the source
+        order of the grid items doesn't matter. Your CSS can place them in any
+        order, which makes it super easy to rearrange your grid with media
+        queries. Imagine defining the layout of your entire page, and then
+        completely rearranging it to accommodate a different screen width all
+        with only a couple lines of CSS. Grid is one of the most powerful CSS
+        modules ever introduced. As of March 2017, most browsers shipped
+        native, unprefixed support for CSS Grid: Chrome (including on
+        Android), Firefox, Safari (including on iOS), and Opera. Internet
+        Explorer 10 and 11 on the other hand support it, but it's an old
+        implementation with an outdated syntax. The time to build with grid is
+        now!
+      </p>
+    </section>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+    <section class="main-section" id="Important_Terminology">
+      <header>Important Terminology</header>
+      <p class="text">
+        Before diving into the concepts of Grid it's important to understand
+        the terminology. Since the terms involved here are all kinda
+        conceptually similar, it's easy to confuse them with one another if
+        you don't first memorize their meanings defined by the Grid
+        specification. But don't worry, there aren't many of them.Grid
+        Container The element on which display: grid is applied. It's the
+        direct parent of all the grid items. In this example container is the
+        grid container.
+      </p>
+    </section>
+
+    <section class="main-section" id="Grid_Properties_Table_of_Contents">
+      <header>Grid Properties Table of Contents</header>
+      <p class="text"></p>
+    </section>
+
+    <section class="main-section" id="Properties_for_the_Parent">
+      <header>Properties for the Parent</header>
+      <p class="text"></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
