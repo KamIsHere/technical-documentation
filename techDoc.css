@@ -1,21 +1,20 @@
-body {
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
-  min-width: 290px;
+.main-body {
+  display:grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 50px;
 }
 
-
-header {
-  font-family: ;
-  text-align: center;
-  font-size: 30px;
+#navbar {
+grid-area: navbar;
+position: fixed;
+border: 1px solid black;
 }
 
-.main-section {
-  display: grid;
+#navbar a {
+display: block;
 }
 
-.text {
-      background-color: lightgray;
-      border-radius: 5px;
+#main-doc {
+  grid-area: mainContent;
 }

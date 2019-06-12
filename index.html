@@ -10,46 +10,95 @@
 </head>
 
 <body>
-  <main id="main-doc">
-    <section class="main-section" id="Introduction">
-      <header>Introduction</header>
-      <p>JavaScript is a high-level programming language that all modern web browsers support. It is also one of the
-        core technologies of the web, along with HTML and CSS that you may have learned previously. This section will
-        cover basic JavaScript programming concepts, which range from variables and arithmetic to objects and loops.</p>
-    </section>
+  <div class="main-body">
+    <nav id="navbar">
+      <header>FreeCodeCamp Documentation</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Comment_Your_JavaScript" class="nav-link">Comment Your JavaScript</a>
+      <a href="#Declare_JavaScript_Variables" class="nav-link">Declare JavaScript Variables</a>
+      <a href="#Storing_Values_With_The_Assignment_Operator" class="nav-link">Storing Values With The Assignment
+        Operator</a>
+      <a href="#Initializing_Variables_With_The_Assignment_Operator" class="nav-link">Initializing Variables With The
+        Assignment Operator</a>
+    </nav>
 
-    <section class="main-section" id="Comment_Your_JavaScript">
-      <header>Comment Your JavaScript</header>
-      <p>Comments are lines of code that JavaScript will intentionally ignore. Comments are a great way to
-        leave notes to yourself and to other people who will later need to figure out what that code does.
-        There are two ways to write comments in JavaScript: </p>
-      <p>Using <code>//</code> will tell JavaScript to ignore the
-        remainder of the text on the current line:</p>
-      <code>// This is an in-line comment.</code>
-      <p>You can make a multi-line comment beginning with <code>/*</code> and ending with <code>*/</code></p>
-      <code>/* This is a </code><code>multi-line comment */</code>
-      <h4>Best Practice</h4>
-      <p>As you write code, you should regularly add comments to clarify the function of parts of your code. Good
-        commenting can help communicate the intent of your code—both for others and for your future self
-      </p>
-    </section>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
 
-    <section class="main-section" id="Declare_JavaScript_Variables">
-      <header>Declare JavaScript Variables</header>
-      <p>In computer science, data is anything that is meaningful to the computer. JavaScript provides seven different
-        data types which are <code>undefined</code> ,
-        <code>null</code> , <code>boolean</code> , <code>symbol</code> , <code>number</code> , <code>object</code></p>
-      <p>For example, computers distinguish between numbers, such as the number <code>"12"</code>, <code></code> </p>
-    </section>
+        <header>Introduction</header>
+        <p>JavaScript is a high-level programming language that all modern web browsers support. It is also one of the
+          core technologies of the web, along with HTML and CSS that you may have learned previously. This section will
+          cover basic JavaScript programming concepts, which range from variables and arithmetic to objects and loops.
+        </p>
+      </section>
 
-    <section class="main-section" id="Storing_Values_With_The_Assignment_Operator">
-      <header>Storing Values With The Assignment Operator</header>
-    </section>
+      <section class="main-section" id="Comment_Your_JavaScript">
+        <header>Comment Your JavaScript</header>
+        <p>Comments are lines of code that JavaScript will intentionally ignore. Comments are a great way to
+          leave notes to yourself and to other people who will later need to figure out what that code does.
+          There are two ways to write comments in JavaScript: </p>
+        <p>Using <code>//</code> will tell JavaScript to ignore the
+          remainder of the text on the current line:</p>
+        <code>// This is an in-line comment.</code>
+        <p>You can make a multi-line comment beginning with <code>/*</code> and ending with <code>*/</code></p>
+        <code>/* This is a </code><code>multi-line comment */</code>
+        <h4>Best Practice</h4>
+        <p>As you write code, you should regularly add comments to clarify the function of parts of your code. Good
+          commenting can help communicate the intent of your code—both for others and for your future self
+        </p>
+      </section>
 
-    <section class="main-section" id="Initializing_Variables_With_The_Assignment_Operator">
-      <header>Initializing Variables With The Assignment Operator</header>
-    </section>
-  </main>
+      <section class="main-section" id="Declare_JavaScript_Variables">
+        <header>Declare JavaScript Variables</header>
+        <p>In computer science, data is anything that is meaningful to the computer. JavaScript provides seven different
+          data types which are <code>undefined</code> ,
+          <code>null</code> , <code>boolean</code> , <code>symbol</code> , <code>number</code> , <code>object</code></p>
+        <p>For example, computers distinguish between numbers, such as the number <code>12</code> , and
+          <code>strngs</code>
+          , such as <code>"12"</code> , <code>"dog"</code> , or <CODE>"123 cats"</CODE> , which are collections of
+          characters. Computers can perform mathematical operations on a number, but not on a string.</p>
+        <p><i>Variables</i> allow computers to store and manipulate data in a dynamic fashion. They do this by using a
+          "label" to
+          point to the data rather than using the data itself. Any of the seven data types may be stored in a variable.
+        </p>
+        <p><code>variables</code> are similar to the x and y variables you use in mathematics, which means they're a
+          simple name to represent the data we want to refer to. Computer <code>variables</code> differ from
+          mathematical
+          variables in that they can store different values at different times.</p>
+        <p>We tell JavaScript to create or declare a variable by putting the keyword <code>var</code> in front of it,
+          like
+          so:
+        </p>
+        <p><code>var ourName;</code></p>
+        <p>creates a <code>variable</code> called <code>ourName</code>. In JavaScript we end statements with semicolons.
+        </p>
+        <p><code>Variable</code> names can be made up of numbers, letters, and <code>$</code> or <code>_</code>, but may
+          not contain spaces or start with a number.
+        </p>
+      </section>
+
+      <section class="main-section" id="Storing_Values_With_The_Assignment_Operator">
+        <header>Storing Values With The Assignment Operator</header>
+        <p>In JavaScript, you can store a value in a variable with the <i>assignment</i> operator.</p>
+        <p><code>myVariable = 5;</code></p>
+        <p>This assigns the <code>Number</code> value <code>5</code> to <code>myVariable</code>.</p>
+        <p>Assignment always goes from right to left. Everything to the right of the <code>=</code> operator is resolved
+          before the value is assigned to the variable to the left of the operator.</p>
+        <p><code>myVar = 5;</code></p>
+        <p><code>myNum = myVar;</code></p>
+        <p>This assigns <code>5</code> to <code>myVar</code> and then resolves <code>myVar</code> to <code>5</code>
+          again
+          and assigns it to <code>myNum</code>.</p>
+      </section>
+
+      <section class="main-section" id="Initializing_Variables_With_The_Assignment_Operator">
+        <header>Initializing Variables With The Assignment Operator</header>
+        <p>It is common to <i>initialize</i> a variable to an initial value in the same line as it is declared.</p>
+        <p><code>var myVar = 0;</code></p>
+        <p>Creates a new variable called <code>myVar</code> and assigns it an initial value of <code>0</code>.</p>
+      </section>
+    </main>
+  </div>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
